@@ -16,7 +16,7 @@ var defaultOptions = {
   timePrecision: 'ms'
 }
 
-function resolveOptCallback(options, callback) {
+function resolveOptCallback (options, callback) {
   if (typeof options === 'function') {
     callback = options
     options = {}
@@ -24,7 +24,7 @@ function resolveOptCallback(options, callback) {
 
   return {
     callback: callback || _.noop,
-    options: options || {},
+    options: options || {}
   }
 }
 
